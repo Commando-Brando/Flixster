@@ -34,7 +34,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
     @Override
     public int getItemViewType(int position) {
         System.out.println(movies.get(position).toString());
-        if(movies.get(position).getVote_average() > 8.8)
+        if(movies.get(position).getVote_average() > 8)
             return POPULAR;
         else
             return BORING;
@@ -119,8 +119,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
         }
 
         public void bind(Movie movie) {
-            String imageUrl = movie.getBackdropPath();
-            Glide.with(context).load(imageUrl).placeholder(R.drawable.loading).into(ivBackDrop);
+            Glide.with(context).load(movie.getBackdropPath()).placeholder(R.drawable.loading).into(ivBackDrop);
         }
     }
 

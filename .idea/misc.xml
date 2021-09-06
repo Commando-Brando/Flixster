@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Branm/AndroidStudioProjects/CodePath/app/src/main/res/drawable/poster_stroke.xml" value="0.3828125" />
+        <entry key="..\:/Users/Branm/AndroidStudioProjects/CodePath/app/src/main/res/drawable/stroke.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/Branm/AndroidStudioProjects/CodePath/app/src/main/res/layout-land/full_backdrop.xml" value="0.3953125" />
         <entry key="..\:/Users/Branm/AndroidStudioProjects/CodePath/app/src/main/res/layout-land/item_movie.xml" value="0.35225225225225226" />
         <entry key="..\:/Users/Branm/AndroidStudioProjects/CodePath/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
