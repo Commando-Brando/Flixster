@@ -27,6 +27,8 @@ import org.parceler.Parcels;
 
 import java.util.List;
 
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
+
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
 
     Context context;
@@ -112,7 +114,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
                 // else imageUrl = poster image
                 imageUrl = movie.getPosterPath();
             }
-            Glide.with(context).load(imageUrl).placeholder(R.drawable.loading).into(ivPoster);
+            Glide.with(context).load(imageUrl).placeholder(R.drawable.loading).centerCrop().transform(new RoundedCornersTransformation(20, 0)).into(ivPoster);
 
             // Registers a click listener on the whole row
             // Navigates to a new activity on tap

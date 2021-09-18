@@ -47,6 +47,7 @@ public class DetailActivity extends YouTubeBaseActivity {
         tvOverview.setText(movie.getOverview());
         ratingBar.setRating((float)movie.getVote_average());
 
+
         // sets up receiving API data in the background
         AsyncHttpClient client = new AsyncHttpClient();
         client.get(String.format(VIDEOS_URL, movie.getMovieID()), new JsonHttpResponseHandler() {
